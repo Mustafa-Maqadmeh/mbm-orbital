@@ -1,16 +1,57 @@
-# React + Vite
+# MBM Orbital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MBM Orbital is an interactive hand-tracking web experience that allows users to draw a circle in the air using hand gestures.
 
-Currently, two official plugins are available:
+The app tracks the user's hand through the camera, draws the fingertip path in real time, and analyzes the result using multiple accuracy metrics.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+https://mustafa-maqadmeh.github.io/mbm-orbital/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Real-time hand tracking using MediaPipe
+- Draw using only the index finger
+- Finish the drawing using two fingers
+- Clear the drawing using a fist gesture
+- Neon fingertip tracking
+- Real-time canvas drawing
+- Circle Circularity analysis
+- Smoothness analysis
+- Closure analysis
+- Final score out of 100
+- Animated score reveal
+- Best score saved using Local Storage
+- Responsive futuristic UI
+- MBM branding
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Hand Controls
+
+- ☝️ Index finger — Draw
+- ✌️ Index + middle finger — Finish and analyze
+- ✊ Fist — Clear the drawing
+
+## Circle Scoring
+
+The final score is calculated using:
+
+- Circularity — 50%
+- Smoothness — 30%
+- Closure — 20%
+
+## Technologies
+
+- React
+- JavaScript
+- Vite
+- MediaPipe Tasks Vision
+- HTML5 Canvas
+- CSS
+- Local Storage
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Mustafa-Maqadmeh/mbm-orbital.git
